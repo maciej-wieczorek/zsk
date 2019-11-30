@@ -310,12 +310,16 @@ body {
     margin: auto;
 }
 
-#set1_2_container .pf_back, .pf_front {
-    background-color: #9030303b !important;
+#set1_2_container .pf_front {
+    background-color: #9030303b;
+}
+
+#set1_2_container .pf_back {
+    background-color: #9030303b;
 }
 
 #set1_2_container .pf_wrapper {
-    width: 20vw;
+    width: 350px;
     margin: auto;
 }
 
@@ -357,5 +361,15 @@ body {
 
     .pf_wrapper .pf_front, .pf_back {
         font-size: 1rem;
+    }
+
+    #set1_2_container .pf_wrapper {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #set1_2_container .pf_wrapper {
+        width: 90%;
     }
 }
