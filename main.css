@@ -241,10 +241,11 @@ body {
 .dashboard {
     background-color: lightskyblue;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: 100px;
     grid-gap: 1rem;
     align-items: center;
+    padding: 1rem;
 }
 
 .dashboard a {
@@ -252,10 +253,33 @@ body {
     text-decoration: none;
     background-color: yellowgreen;
     text-align: center;
+    font-size: 1rem;
     color: black;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 600px) {
+.dashboard_content input {
+    min-height: 25px;
+    min-width: 181px;
+}
+
+.dashboard_content input {
+    min-height: 25px;
+    min-width: 181px;
+}
+
+.dashboard_content input[type=submit] {
+    background-color: #ff5056;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    min-width: 100px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 620px) {
     .topnav a:not(:first-child) {
         display: none;
     }
