@@ -24,12 +24,12 @@
         <h1>Stwórz własny zestaw</h1>
         <form method="post">
             <h3>Nazwa zestawu</h3>
-            <input type="text" name="set_name">
+            <input type="text" name="set_name" required>
             <h3>Opis</h3>
-            <textarea name="set_description" cols="30" rows="5"></textarea>
+            <textarea name="set_description" cols="30" rows="5"></textarea><br>
             <div id="words_wrapper">
-                <input type="text" class="words" name="word" placeholder="Słowo">
-                <input type="text" class="words" name="translation" placeholder="Tłumaczenie">
+                <input type="text" class="words" name="word" placeholder="Słowo" required>
+                <input type="text" class="words" name="translation" placeholder="Tłumaczenie" required>
             </div>
             <br>
             <i class="fas fa-plus-circle fa-3x" onclick="add_words()"></i><br>

@@ -20,6 +20,7 @@ function flip(element) {
 var w = document.querySelectorAll(".words");
 var wr = document.querySelector("#words_wrapper");
 
+/*
 function add_words_on_enter() {
     w.forEach(element => {
         element.addEventListener("keypress", function(e) {
@@ -30,9 +31,22 @@ function add_words_on_enter() {
         })
     });
 }
-
-add_words_on_enter();
+*/
 
 function add_words() {
-    wr.innerHTML += "<br><input type='tex' class='words' name='word' placeholder='Słowo'><input type='text' class='words' name='translation' placeholder='Tłumaczenie'>";
+   var input = document.createElement("input");
+   input.type = "text";
+   input.className = "words";
+   input.placeholder = "Słowo";
+   input.required = "required";
+
+   var translation = document.createElement("input");
+   translation.type = "text";
+   translation.className = "words";
+   translation.placeholder = "Tłumaczenie";
+
+   var br = document.createElement("br");
+   wr.appendChild(br);
+   wr.appendChild(input);
+   wr.appendChild(translation);
 }
