@@ -53,6 +53,10 @@ body {
     float: right;
 }
 
+.user {
+    float: right !important;
+}
+
 #login_body {
     background-color: #d9d9d9;
 }
@@ -235,6 +239,10 @@ body {
     .topnav a.icon {
         float: right;
         display: block;
+    }
+
+    .user {
+        float: left !important;
     }
 
     .topnav.responsive {
