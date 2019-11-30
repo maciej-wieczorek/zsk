@@ -279,6 +279,29 @@ body {
     border-radius: 5px;
 }
 
+#set_creation {
+    text-align: center;
+}
+
+#set_creation input {
+    border-radius: 10px;
+    background-color: #fefefe;
+    outline: none;
+    height: 30px;
+}
+
+#set_creation input:focus {
+    border: 2px solid #ff5056;
+}
+
+#set_creation input[type=submit] {
+    background-color: #ff5056;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+}
+
 @media screen and (max-width: 620px) {
     .topnav a:not(:first-child) {
         display: none;
